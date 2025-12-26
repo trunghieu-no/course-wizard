@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  }
+  
+  h2 { margin-top: 0; }
+  
+  input, textarea, select {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  button {
+    padding: 8px 14px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fafafa;
+    cursor: pointer;
+  }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  
+  .module {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+  
+  /* Modal base */
+  .modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    width: 360px;
+    border-radius: 8px;
+  }
+  .modal-content.wide { width: 640px; }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Step 3 */
+  .info-line .sub { color: #666; margin-top: 6px; }
+  
+  .materials-box,
+  .nav-box {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 16px;
+  }
+  
+  .materials-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .empty {
+    color: #999;
+    padding: 10px;
+    border: 1px dashed #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .materials-list {
+    list-style: decimal inside;
+    padding-left: 0;
+    margin: 0 0 8px 0;
+  }
+  .material-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    padding: 6px 8px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  }
+  .material-pill {
+    background: #f0f0f0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4px 0;
+  }
+  .material-title { font-weight: 500; }
+  .material-actions { text-align: right; color: #777; }
+  
+  /* Navigation */
+  .nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .nav-module {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  .nav-module-title {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 6px;
+  }
+  .nav-module-title.active { color: #1f6feb; }
+  .nav-lessons { list-style: none; padding-left: 6px; margin: 0; }
+  .nav-lesson {
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .nav-lesson:hover { background: #f6f8fa; }
+  .nav-lesson.current { background: #e8f0fe; }
+  
+  /* Tiles (Material type) */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .tile {
+    border: 1px dashed #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .tile:hover { background: #f7faff; }
+  .tile-icon { font-size: 24px; }
+  .tile-title { margin-top: 6px; font-weight: 600; }
+  
+  /* H5P selector */
+  .search-box { margin-bottom: 10px; }
+  .h5p-list .h5p-row {
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  .h5p-meta { color: #777; margin-top: 2px; }
+  
+  .link-btn {
+    background: transparent;
+    border: none;
+    color: #1f6feb;
+    cursor: pointer;
+    padding: 0;
+  }
+  
